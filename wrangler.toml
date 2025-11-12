@@ -1,0 +1,11 @@
+name = "hackerhardware"
+main = "src/index.js"
+compatibility_date = "2025-11-13"
+
+[build]
+command = "npm install && npm run build"
+
+[env.production]
+workers_dev = false
+route = "hackerhardware.net/*"
+zone_id = "<YOUR_ZONE_ID>"
