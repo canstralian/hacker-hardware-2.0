@@ -4,190 +4,25 @@
   <meta charset="UTF-8" />
   <title>HackerHardware.net</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Optional: nice, techy font -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap"
-    rel="stylesheet"
-  />
-
-  <style>
-    :root {
-      --bg-dark: #02030a;
-      --text-main: #ffffff;
-      --text-subtle: #c7cad4;
-      --accent: #18a4ff;
-      --accent-soft: rgba(24, 164, 255, 0.12);
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html,
-    body {
-      height: 100%;
-    }
-
-    body {
-      font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", sans-serif;
-      background:
-        linear-gradient(120deg, rgba(0, 0, 0, 0.7), rgba(10, 16, 40, 0.9)),
-        url("hero-image.jpg") center center / cover no-repeat fixed;
-      /* ^^^ replace hero-image.jpg with your actual image path */
-      color: var(--text-main);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1.5rem;
-    }
-
-    .shell {
-      background: rgba(1, 4, 15, 0.78);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      box-shadow: 0 40px 90px rgba(0, 0, 0, 0.7);
-      backdrop-filter: blur(14px);
-      border-radius: 18px;
-      padding: 2.5rem 2.75rem;
-      max-width: 520px;
-      width: 100%;
-      text-align: center;
-    }
-
-    .tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.25rem 0.75rem;
-      border-radius: 999px;
-      font-size: 0.75rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--text-subtle);
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      margin-bottom: 1.15rem;
-    }
-
-    .tag-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: var(--accent);
-      box-shadow: 0 0 10px rgba(24, 164, 255, 0.8);
-    }
-
-    h1 {
-      font-size: clamp(1.8rem, 3vw, 2.4rem);
-      font-weight: 600;
-      margin-bottom: 0.6rem;
-      letter-spacing: 0.04em;
-    }
-
-    .line {
-      font-size: 0.98rem;
-      color: var(--text-subtle);
-      margin-bottom: 0.2rem;
-    }
-
-    .line-strong {
-      font-weight: 500;
-      color: #e3e7ff;
-    }
-
-    .cta-wrap {
-      margin-top: 1.75rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.35rem;
-    }
-
-    .btn-primary {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.45rem;
-      padding: 0.8rem 1.8rem;
-      border-radius: 999px;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      background: var(--accent);
-      color: #020309;
-      font-weight: 600;
-      font-size: 0.95rem;
-      text-decoration: none;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      box-shadow: 0 0 0 1px rgba(24, 164, 255, 0.4),
-        0 18px 45px rgba(0, 0, 0, 0.6);
-      transition: transform 0.12s ease-out, box-shadow 0.12s ease-out,
-        background 0.12s ease-out;
-    }
-
-    .btn-primary span.icon {
-      font-size: 1.05rem;
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 0 0 1px rgba(24, 164, 255, 0.65),
-        0 22px 55px rgba(0, 0, 0, 0.8);
-      background: #30b2ff;
-    }
-
-    .btn-primary:active {
-      transform: translateY(0);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
-      background: #0f91dd;
-    }
-
-    .cta-note {
-      font-size: 0.78rem;
-      color: var(--text-subtle);
-      opacity: 0.75;
-    }
-
-    @media (max-width: 600px) {
-      .shell {
-        padding: 1.9rem 1.7rem;
-        border-radius: 14px;
-      }
-
-      h1 {
-        font-size: 1.7rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="shell">
-    <div class="tag">
-      <span class="tag-dot"></span>
-      <span>HackerHardware.net</span>
-    </div>
+  <div class="center-content">
+    <div class="title">HackerHardware.net</div>
+    <div class="line">Boot sequence: armed.</div>
+    <div class="line">Standby.</div>
 
-    <h1>Boot sequence: armed.</h1>
-
-    <p class="line line-strong">Standby.</p>
-    <p class="line">Monitor the channel for activation.</p>
-
-    <div class="cta-wrap">
+    <div class="cta">
       <a
         href="https://t.me/your_channel_here"
         target="_blank"
         rel="noopener"
-        class="btn-primary"
+        class="btn-telegram"
       >
-        <span class="icon">📡</span>
+        <span class="btn-telegram-icon">📡</span>
         <span>Join Broadcast Channel</span>
       </a>
-      <p class="cta-note">No inbox. Signal only.</p>
     </div>
-  </main>
+  </div>
 </body>
 </html>
